@@ -6,4 +6,8 @@ class Solver
     raise 'Negative values not allowed' if n < 0
     (1..n).reduce(:*)
   end
+
+  def reverse(str)
+    str.reverse
+  end
 end
