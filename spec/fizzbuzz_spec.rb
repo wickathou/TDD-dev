@@ -25,11 +25,10 @@ describe 'Solver.fizzbuzz' do
       expect(solver.fizzbuzz(10)).to eq('buzz')
     end
 
-    it 'tests fizzbuzz method returns the integer converted to a string when the number is neither divisible by 5 or 3' do
+    it 'tests fizzbuzz method returns the integer converted to a string' do
       solver = Solver.new
       expect(solver.fizzbuzz(7)).to eq('7')
       expect(solver.fizzbuzz(8)).to eq('8')
     end
-
   end
 end
