@@ -19,5 +19,11 @@ describe 'Solver.fizzbuzz' do
       expect(solver.fizzbuzz(9)).to eq('fizz')
     end
 
+    it 'tests fizzbuzz method returns buzz when the number is divisible by 5' do
+      solver = Solver.new
+      expect(solver.fizzbuzz(5)).to eq('buzz')
+      expect(solver.fizzbuzz(10)).to eq('buzz')
+    end
+
   end
 end
