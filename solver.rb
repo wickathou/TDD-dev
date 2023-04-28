@@ -1,8 +1,6 @@
 class Solver
 
-  def initialize
-  end
-  
   def factorial(n)
+    (1..n).reduce(:*)
   end
 end
