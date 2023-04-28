@@ -12,6 +12,6 @@ class Solver
   end
 
   def fizzbuzz(num)
-    
+    return "fizzbuzz" if num % 15 == 0
   end
 end
