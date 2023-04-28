@@ -4,7 +4,7 @@ class Solver
     return 1 if num.zero?
     raise 'Negative values not allowed' if num.negative?
 
-    (1..n).reduce(:*)
+    (1..num).reduce(:*)
   end
 
   def reverse(str)
