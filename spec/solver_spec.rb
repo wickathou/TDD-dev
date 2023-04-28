@@ -27,6 +27,14 @@ describe 'Solver.factorial' do
       solver = Solver.new
       expect { solver.factorial(-1) }.to raise_error('Negative values not allowed')
       expect { solver.factorial(-10) }.to raise_error('Negative values not allowed')
-    end 
+    end
+
+    it 'tests factorial method raises an error when the argument is not a number' do
+      solver = Solver.new
+      expect { solver.factorial('a') }.to raise_error('Not a number')
+      expect { solver.factorial('abc') }.to raise_error('Not a number')
+      expect { solver.factorial('1a') }.to raise_error('Not a number')
+      expect { solver.factorial('1.2') }.to raise_error('Not a number')
+    end
   end
 end
