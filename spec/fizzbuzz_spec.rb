@@ -24,6 +24,5 @@ describe 'Solver.fizzbuzz' do
       expect(solver.fizzbuzz(5)).to eq('buzz')
       expect(solver.fizzbuzz(10)).to eq('buzz')
     end
-
   end
 end
