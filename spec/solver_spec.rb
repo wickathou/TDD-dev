@@ -1,10 +1,10 @@
+require_relative '../solver'
 describe 'Solver.factorial' do
   context 'Runs multiple tests for a solver instance' do
     
-    it 'tests factorial method' do
-      mock = double('factorial')
-      expect(mock).to receive(:factorial).with(5).and_return(120)
-      solver = Solver.new(mock)
+    it 'tests factorial method receives the values appropiately' do
+      solver = Solver.new
+      expect(solver).to receive(:factorial).with(5)
       solver.factorial(5)
     end
   end
