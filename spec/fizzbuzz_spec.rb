@@ -12,5 +12,12 @@ describe 'Solver.fizzbuzz' do
       expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
       expect(solver.fizzbuzz(30)).to eq('fizzbuzz')
     end
+
+    it 'tests fizzbuzz method returns fizz when the number is divisible by 3' do
+      solver = Solver.new
+      expect(solver.fizzbuzz(3)).to eq('fizz')
+      expect(solver.fizzbuzz(9)).to eq('fizz')
+    end
+
   end
 end
